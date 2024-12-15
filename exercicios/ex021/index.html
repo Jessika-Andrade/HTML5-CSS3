@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: pink;
+        }
+        a:active {
+            color: yellow;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        .especial::before {
+            content: '| ';
+            color: darkgray;
+        }
+        .especial::after {
+            content: ' | ';
+            text-decoration: none;
+            color: darkgray;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank" class="especial">Curso</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po" target="_blank">Youtube</a></li>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/desafios/modulo-02/d010" target="_blank">GitHub</a></li>
+    </ul>
+</body>
+</html>
