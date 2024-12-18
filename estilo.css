@@ -6,17 +6,16 @@ body {
     margin: 50px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+#container {
+    height: 100%;
+    max-width: 800px;
+    min-width: 320px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(23, 18, 18, 0.558);
 }
-
-a:hover {
-    text-decoration: underline;
-    font-weight: bolder;
-    font-size: 1.1em;
-}
-
 header {
     text-align: center;
     margin-bottom: 20px;
@@ -28,23 +27,24 @@ height: auto;
 max-height: 150px;
 }
 
-
-#container {
-    height: 100vh;
-    max-width: 800px;
-    min-width: 320px;
-    background-color: white;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(23, 18, 18, 0.558);
-}
-
 h1 {
     text-align: center;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
 
 ul {
     padding: 0px;
     list-style-type: none;
 }
+
