@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Formulários</title>
+</head>
+<body>
+    <h1>Radio e Checkbox</h1>
+    <form action="cadastro.php">
+       <fieldset> <!-- No Radio, o name tem que ser o mesmo. -->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas" value="M" checked>
+            <label for="imas">Masculino</label> 
+            <input type="radio" name="sexo" id="ifem" value="F">
+            <label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="nbas" id="ibas">
+            <label for="ibas">Basquete</label>
+            <input type="checkbox" name="nfut" id="ifut" checked>
+            <label for="ifut">Futebol</label>
+            <input type="checkbox" name="nvol" id="ivol">
+            <label for="ivol">Vôlei</label>
+            <input type="checkbox" name="nten" id="iten">
+            <label for="iten">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <p><a href="index.html">Página 1</a></p>
+    <p><a href="formulario002.html">Página 2</a></p>
+    <p><a href="formulario003.html">Página 3</a></p>
+    <p><a href="formulario004.html">Página 4</a></p>
+</body>
+</html>
