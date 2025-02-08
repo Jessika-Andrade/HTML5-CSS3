@@ -7,21 +7,16 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="post" autocomplete="on">
-
+    <form action="cadastro.php" method="get" autocomplete="on">
+       <!-- Normalmente, se utiliza div. Estamos utilizando parágrafo para evitar criar estilos -->
         <p>
-            <label for="icor">Cor: </label>
-            <input type="color" name="cor" id="icor">
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2030" oninput="calcIdade()">
         </p>
-
+        
         <p>
-            <label for="inivel">Nível de satisfação: </label>
-            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
-        </p>
-
-        <p>
-            <label for="ifoto">Foto do perfil: </label>
-            <input type="file" name="foto" id="ifoto">
+           <label for="iidade">Sua idade é: </label>
+           <output id="iidade">0</output>
         </p>
 
         <p>
@@ -35,9 +30,15 @@
     <p><a href="formulario003.html">Página 3</a></p>
     <p><a href="formulario004.html">Página 4</a></p>
     <p><a href="formulario005.html">Página 5</a></p>
+    <p><a href="formulario006.html">Página 6</a></p>
     <p><a href="formulario007.html">Página 7</a></p>
-    <p><a href="formulario008.html">Página 8</a></p>
     <p><a href="formulario009.html">Página 9</a></p>
-    <p><a href="formulario010.html">Página 10</a></p>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear();
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 </body>
 </html>

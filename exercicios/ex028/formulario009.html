@@ -3,41 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Formulário</title>
+    <title>Formulário</title>
 </head>
 <body>
-    <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="post" autocomplete="on">
-
+    <h1>Criando Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
-            <label for="icor">Cor: </label>
-            <input type="color" name="cor" id="icor">
+            <label for="inum">Número: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="2" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival"></output>
         </p>
 
         <p>
-            <label for="inivel">Nível de satisfação: </label>
-            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+
         </p>
 
         <p>
-            <label for="ifoto">Foto do perfil: </label>
-            <input type="file" name="foto" id="ifoto">
-        </p>
-
-        <p>
-            <input type="submit" value="Enviar">
+            <input type="button" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>
-
-    <p><a href="index.html">Página 1</a></p>
+    
     <p><a href="formulario002.html">Página 2</a></p>
     <p><a href="formulario003.html">Página 3</a></p>
     <p><a href="formulario004.html">Página 4</a></p>
     <p><a href="formulario005.html">Página 5</a></p>
+    <p><a href="formulario006.html">Página 6</a></p>
     <p><a href="formulario007.html">Página 7</a></p>
     <p><a href="formulario008.html">Página 8</a></p>
-    <p><a href="formulario009.html">Página 9</a></p>
     <p><a href="formulario010.html">Página 10</a></p>
 </body>
 </html>
