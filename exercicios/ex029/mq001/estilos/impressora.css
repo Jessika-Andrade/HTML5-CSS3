@@ -24,3 +24,7 @@ article {
 article::after {
     content: 'Esse artigo foi impresso através do site wwww.cursoemvideo.com';
 }
+
+a {
+    display: none;
+}
