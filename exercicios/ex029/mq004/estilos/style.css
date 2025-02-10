@@ -51,3 +51,26 @@ img#tablet {display: none;}
 img#print {display: none;}
 img#pc {display: none;}
 img#tv {display: none;}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    font-size: 0.3em;
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: rgba(18, 18, 18, 0.688);
+
+}
