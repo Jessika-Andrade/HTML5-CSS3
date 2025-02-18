@@ -7,16 +7,36 @@
     <style>
         div.conteiner {
             background-color: pink;
-            height: 100px;
             display: flex;
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
         }
 
         div.item {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            
+        }
+
+        div#cxA {
+            /* flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: 200px; */
+            flex: 1 0 200px;
+        }
+
+        div#cxB {
+            /* flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 150px; */
+            flex: 1 1 150px;
+        }
+
+        div#cxC {
+            /* flex-shrink: 8;
+            flex-grow: 1;
+            flex-basis: auto; */
+            flex: 1 8 auto;
         }
 
         ul {
@@ -25,23 +45,19 @@
             margin-top: 50px;
         }
 
-
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">Exemplo de Bloco: A</div>
-        <div class="item">Exemplo de Bloco: B</div>
-        <div class="item">Exemplo de Bloco: C</div>
-        <div class="item">Exemplo de Bloco: D</div>
-        <div class="item">Exemplo de Bloco: E</div>
-        <div class="item">Exemplo de Bloco: F</div>
-        <div class="item">Exemplo de Bloco: G</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
     </div>
 
     <ul>
         <li><a href="../flex001/index.html">Página 01</a></li>
         <li><a href="../flex002/index.html">Página 02</a></li>
+        <li><a href="../flex003/index.html">Página 03</a></li>
         <li><a href="../flex004/index.html">Página 04</a></li>
         <li><a href="../flex005/index.html">Página 05</a></li>
         <li><a href="../flex006/index.html">Página 06</a></li>
@@ -49,9 +65,7 @@
         <li><a href="../flex008/index.html">Página 08</a></li>
         <li><a href="../flex009/index.html">Página 09</a></li>
         <li><a href="../flex010/index.html">Página 10</a></li>
-        <li><a href="../flex011/index.html">Página 11</a></li>
         <li><a href="../flex012/index.html">Página 12</a></li>
     </ul>
-
 </body>
 </html>

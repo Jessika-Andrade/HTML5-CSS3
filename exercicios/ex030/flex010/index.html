@@ -7,16 +7,17 @@
     <style>
         div.conteiner {
             background-color: pink;
-            height: 100px;
+
             display: flex;
-            flex-flow: column nowrap;
         }
 
         div.item {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
         }
 
         ul {
@@ -24,34 +25,27 @@
             display: block;
             margin-top: 50px;
         }
-
-
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">Exemplo de Bloco: A</div>
-        <div class="item">Exemplo de Bloco: B</div>
-        <div class="item">Exemplo de Bloco: C</div>
-        <div class="item">Exemplo de Bloco: D</div>
-        <div class="item">Exemplo de Bloco: E</div>
-        <div class="item">Exemplo de Bloco: F</div>
-        <div class="item">Exemplo de Bloco: G</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
     </div>
 
     <ul>
         <li><a href="../flex001/index.html">Página 01</a></li>
         <li><a href="../flex002/index.html">Página 02</a></li>
+        <li><a href="../flex003/index.html">Página 03</a></li>
         <li><a href="../flex004/index.html">Página 04</a></li>
         <li><a href="../flex005/index.html">Página 05</a></li>
         <li><a href="../flex006/index.html">Página 06</a></li>
         <li><a href="../flex007/index.html">Página 07</a></li>
         <li><a href="../flex008/index.html">Página 08</a></li>
         <li><a href="../flex009/index.html">Página 09</a></li>
-        <li><a href="../flex010/index.html">Página 10</a></li>
         <li><a href="../flex011/index.html">Página 11</a></li>
         <li><a href="../flex012/index.html">Página 12</a></li>
     </ul>
-
 </body>
 </html>
